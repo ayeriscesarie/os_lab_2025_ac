@@ -2,6 +2,23 @@
 
 void RevertString(char *str)
 {
-	// your code here
-}
+    char *left = str;
+    char *right = str;
 
+    while (*right != '\0')
+    {
+        right++;
+    }
+
+    right--;
+
+    while (left < right)
+    {
+        char temp = *left;
+        *left = *right;
+        *right = temp;
+
+        left++;
+        right--;
+    }
+}
