@@ -1,0 +1,4 @@
+*.o
+lab3/src/sequential_min_max
+lab3/src/parallel_min_max
+lab3/src/run_sequential
