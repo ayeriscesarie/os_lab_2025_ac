@@ -13,10 +13,10 @@ int main(int argc, char **argv) {
 
     if (child_pid == 0) {
         execl("./sequential_min_max",
-              "sequential_min_max",
-              "--seed", "10",
-              "--array_size", "20",
-              NULL);
+      "sequential_min_max",
+      "10",
+      "20",
+      NULL);
 
         perror("execl");
         return 1;
